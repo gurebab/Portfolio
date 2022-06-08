@@ -90,7 +90,6 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
 .section02 .con .section_wrap .item02 .text_wrap .tit::before{ background-image: url(../img/icon_section02_tit.png); }
 .section02 .con .section_wrap .item02 .text_wrap .em{ padding-top: 12px; font-size: 28px; font-family: 'style-font'; color: #67CDC8; line-height: 1.2; }
 
-.slick-list{ overflow: inherit; }
 .slick-initialized .slick-slide.slick-active .slide_item .icon{ animation: bounce; animation-duration: 0.5s; animation-fill-mode: forwards; }
 @keyframes bounce{
     80%{ transform: rotate(10deg) scale(105%); }
@@ -203,7 +202,7 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
     .section05 .con ul li .inner .img_section .hover_event .item .icon{ margin: 0 auto; margin-top: 66px; }
   }
 
-  @media ( max-width: 1024px ) {
+@media ( max-width: 1024px ) {
       
 
     .section02 .con .section_wrap .item02 .text_wrap .em br{ display: none; }
@@ -227,7 +226,7 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
     .section05 .con ul li .inner .img_section .hover_event .item .icon{ margin: 0 auto; margin-top: 66px; }
   }
 
-  @media ( max-width: 800px ) {
+@media ( max-width: 800px ) {
     .section02 .con .section_wrap{ width: 100%; }
     .section02 .con .section_wrap .item01{ width: 100%; padding: 0; }
 
@@ -238,5 +237,20 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
     .section05 .con .tit_wrap{ display: block; }
 
     .section05 .con .tit_wrap p{ transform: translate(0,-50%); bottom: 0; top: 50%; }
+
+  }
+
+@media ( max-width: 456px ) {
+    .section03 .con .item.item01 .profile_wrap ul li{ display: flex; }
+    .section03 .con .item .profile_wrap ul li span{ width: calc(100% - 70px); }
+    
+    .section04 .con ul li .inner .img_section{ height: 180px; }
+    .section04 .con ul li .inner .img_section .hover_event .item .icon{ margin-top: 34px; }
+    .section04 .con ul li .inner .img_section .hover_event{ opacity: 1; }
+    .section04 .con ul li .inner .img_section .hover_event .item.item01{ opacity: 1; background-color:rgba(103,206,201,0.9); }
+    .section04 .con ul li .inner .img_section .hover_event .item.item02{ opacity: 1; background-color:rgba(255,220,138,0.9); }
+
+    .section05 .con ul li .inner .img_section .hover_event .item{ padding-top: 0; }
+    .section05 .con ul li .inner .img_section .hover_event{ opacity: 1; }
 
   }

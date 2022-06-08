@@ -1,9 +1,9 @@
 $(document).ready(function(){
     new fullpage('#fullpage', {
+      responsiveWidth: 1800,
         verticalCentered: false,
         scrollBar:true,
         anchors: ['anchor1', 'anchor2', 'anchor3','anchor4' , 'anchor5'],
-        responsiveWidth: 1280,
       });
 
       var fill = $('.svg-logo').drawsvg({
