@@ -151,12 +151,14 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
 .section04 .con ul li:hover .inner .img_section img{ transform: scale(105%); }
 .section04 .con ul li .inner .text{ display: flex; justify-content: space-between; padding: 0 8px; font-size: 14px; color: #727272; box-sizing: border-box; }
 .section04 .con ul li .inner .text span:first-child{ color: #353E43; font-weight: 600; }
+.section04 .con ul li .inner .text span:last-child{ text-align: right; }
 
 /* 섹션5 */
 .section05{ background-color: #FAFAFA; }
 .section05 .con{ padding-top: 180px; }
 .section05 .con .tit_wrap{ position: relative; display: flex; justify-content: center; margin-bottom: 34px; }
 .section05 .con .tit_wrap p{ position: absolute; bottom: -14px; right: 0; font-size: 14px; color: #F13E3E; }
+.section05 .con .tit_wrap p br{ display: none; }
 .section05 .con .tit{ display: inline-block; margin: 0; }
 .section05 .con .tit::before{ background-image: url(../img/icon_section05_tit.png); }
 .section05 .con ul{ width: 100%; display: flex; flex-wrap: wrap; justify-content: flex-start; }
@@ -174,6 +176,8 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
 .section05 .con ul li:hover .inner .img_section img{ transform: scale(105%); }
 .section05 .con ul li .inner .text{ position: absolute; transform: translate(-50%,50%); bottom: 0; left: 50%; width: 70%; padding: 6px 0; border-radius: 50px; background-color: #FF961E; box-sizing: border-box; }
 .section05 .con ul li .inner .text p{ color: #ffffff; font-weight: 600; text-align: center; letter-spacing: 0; }
+
+.fp-warning, .fp-watermark{ display: none; }
 
 
 @media ( max-width: 1280px ) {
@@ -227,8 +231,13 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
   }
 
 @media ( max-width: 800px ) {
+
+    .tit::before{ left: 0; }
+    .tit{ padding-left: 24px; }
+
     .section02 .con .section_wrap{ width: 100%; }
     .section02 .con .section_wrap .item01{ width: 100%; padding: 0; }
+    .section02 .con .section_wrap .item02 .text_wrap .em{ font-size: 24px; }
 
     .section03 .con .item.item01{ flex-wrap: wrap; }
     .section03 .con .item.item01 .profile_wrap{ width: 100%; }
@@ -243,6 +252,8 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
 @media ( max-width: 456px ) {
     .section03 .con .item.item01 .profile_wrap ul li{ display: flex; }
     .section03 .con .item .profile_wrap ul li span{ width: calc(100% - 70px); }
+    .section03 .con .item02 .profile_wrap ul li{ width: calc((100% - 48px)/3); height: 110px; margin: 0 6px; margin-bottom: 24px; background-size: 100%; }
+    .section03 .con .item02 .profile_wrap ul li:nth-child(3n){ margin-right: 0; }
     
     .section04 .con ul li .inner .img_section{ height: 180px; }
     .section04 .con ul li .inner .img_section .hover_event .item .icon{ margin-top: 34px; }
@@ -252,5 +263,7 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
 
     .section05 .con ul li .inner .img_section .hover_event .item{ padding-top: 0; }
     .section05 .con ul li .inner .img_section .hover_event{ opacity: 1; }
+    .section05 .con ul li .inner .img_section img{ width: auto; height: 100%; transform: translate(-50%,0); left: 50%; }
+    .section05 .con .tit_wrap p br{ display: inherit; }
 
   }
