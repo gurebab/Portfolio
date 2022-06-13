@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이유섭 포트폴리오</title>
 
-    <script src="./resourse/js/jquery-3.6.0.js" ></script>
-    <script src="./resourse/js/fullpage.js"></script>
+    <script src="./resourse/js/jquery-3.5.1.js" ></script>
     <script src="./resourse/js/jquery.drawsvg.min.js"></script>
     <script src="./resourse/js/slick.js"></script>
+    <script src="./resourse/js/jquery.fullPage.js"></script>
     <script src="./resourse/js/style.js"></script>
 
-    <link rel="stylesheet" href="./resourse/css/fullpage.css">
     <link rel="stylesheet" href="./resourse/css/slick.css">
+    <link rel="stylesheet" href="./resourse/css/jquery.fullPage.css">
     <link rel="stylesheet" href="./resourse/css/style.css">
 </head>
 <body>
@@ -27,33 +27,33 @@
             <span class="bar bar03"></span>
         </button>
         <div class="header">
-            <ul>
-                <li class="introduce">
-                    <a href="#anchor2">
+            <ul id="menu">
+                <li data-anchor="section02" class="introduce">
+                    <a href="#section02">
                         <div class="img"></div>
                         <span>소개</span>
                     </a>
                 </li>
-                <li class="introduce">
-                    <a href="#anchor3">
+                <li data-anchor="section03" class="introduce">
+                    <a href="#section03">
                         <div class="img"></div>
                         <span>프로필</span>
                     </a>
                 </li>
-                <li class="introduce">
-                    <a href="#anchor4">
+                <li data-anchor="section04" class="introduce">
+                    <a href="#section04">
                         <div class="img"></div>
                         <span>포트폴리오</span>
                     </a>
                 </li>
-                <li class="introduce">
-                    <a href="#anchor5">
+                <li data-anchor="section05" class="introduce">
+                    <a href="#section05">
                         <div class="img"></div>
                         <span>디자인</span>
                     </a>
                 </li>
-                <li class="introduce">
-                    <a href="#anchor6">
+                <li data-anchor="section06" class="introduce">
+                    <a href="#section06">
                         <div class="img"></div>
                         <span>연락처</span>
                     </a>
@@ -295,7 +295,6 @@
             <div class="con">
                 <div class="tit_wrap">
                     <h2 class="tit">Design</h2>
-                    <p>*디자인 프로젝트를<br>진행한 페이지입니다.</p>
                 </div>
                 <ul>
                     <li>
@@ -379,6 +378,20 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="footer section section06 fp-auto-height">
+            <div class="con">
+                <div class="item item01">
+                    <ul>
+                        <li class="phone">010 - 2805 - 8538</li>
+                        <li class="mail">gurenan@naver.com</li>
+                        <li class="talk">gurenan</li>
+                    </ul>
+                </div>
+                <div class="item item02">
+                    <span>CopyRight 2021 E.U.SUP<br>reserved.</span>
+                </div>
             </div>
         </div>
     </div>
