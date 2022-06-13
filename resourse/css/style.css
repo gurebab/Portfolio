@@ -18,7 +18,7 @@ img{ display: block; }
 h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; color: inherit;}
 
 .section{ position: relative; text-align: left; }
-.con{ position: relative; max-width: 1280px; width: 100%; margin: 0 auto; min-height: 200px; }
+.con{ position: relative; max-width: 1280px; width: 100%; margin: 0 auto; }
 .tit{ position: relative; font-size: 28px; font-family: 'style-font'; color: #2B9788; margin-bottom: 34px; padding-left: 36px; }
 .tit::before{ content: ""; position: absolute; transform: translate(0 , -50%); left: 6px; top: 38%; width: 24px; height: 24px; }
 
@@ -124,7 +124,7 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
 .section03 .con .item02 .profile_wrap ul li a span{ display: inline-block; width: 100%; text-align: center; }
 
 /* 섹션4 */
-.section04{ background-color: #FAFAFA; }
+.section04{ background-color: #FAFAFA; height: 100vh; }
 .section04 .con{ padding-top: 180px; }
 .section04 .con .tit_wrap{ display: flex; justify-content: center; margin-bottom: 34px; }
 .section04 .con .tit_wrap .tit{ display: inline-block; text-align: center; margin: 0; }
@@ -157,7 +157,6 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
 .section05{ background-color: #FAFAFA; }
 .section05 .con{ padding-top: 180px; }
 .section05 .con .tit_wrap{ position: relative; display: flex; justify-content: center; margin-bottom: 34px; }
-.section05 .con .tit_wrap p{ position: absolute; bottom: -14px; right: 0; font-size: 14px; color: #F13E3E; }
 .section05 .con .tit_wrap p br{ display: none; }
 .section05 .con .tit{ display: inline-block; margin: 0; }
 .section05 .con .tit::before{ background-image: url(../img/icon_section05_tit.png); }
@@ -178,6 +177,18 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
 .section05 .con ul li .inner .text p{ color: #ffffff; font-weight: 600; text-align: center; letter-spacing: 0; }
 
 .fp-warning, .fp-watermark{ display: none; }
+
+.footer{ padding: 24px 0; background-color: #424242; }
+.footer::before{ display: none; }
+.footer .con{ display: flex; color: #ffffff; }
+.footer .con .item{ width: 50%; }
+.footer .con .item.item01{ position: relative; }
+.footer .con .item.item01::before{ content: ""; position: absolute; right: 0; top: 0; width: 1px; height: 100%; background-color: #cecece; }
+.footer .con .item.item01 ul li{ margin: 12px 0; padding-left: 28px; font-size: 18px; background-position: 0px 4px; background-repeat: no-repeat; background-size: 20px;  }
+.footer .con .item.item01 ul li.phone{ background-image: url(../img/icon_footer_phone.png);}
+.footer .con .item.item01 ul li.mail{ background-image: url(../img/icon_footer_mail.png);}
+.footer .con .item.item01 ul li.talk{ background-image: url(../img/icon_footer_talk.png);}
+.footer .con .item.item02{ text-align: right; color: #cecece; }
 
 
 @media ( max-width: 1280px ) {
@@ -250,7 +261,7 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
   }
 
 @media ( max-width: 456px ) {
-    .section03 .con .item.item01 .profile_wrap ul li{ display: flex; }
+    .section03 .con .item.item01 .profile_wrap ul li{ display: flex; margin: 6px 0; }
     .section03 .con .item .profile_wrap ul li span{ width: calc(100% - 70px); }
     .section03 .con .item02 .profile_wrap ul li{ width: calc((100% - 48px)/3); height: 110px; margin: 0 6px; margin-bottom: 24px; background-size: 100%; }
     .section03 .con .item02 .profile_wrap ul li:nth-child(3n){ margin-right: 0; }
@@ -264,6 +275,9 @@ h1,h2,h3,h4,h4,h5,h6{  position: relative; display: block; font-size: inherit; c
     .section05 .con ul li .inner .img_section .hover_event .item{ padding-top: 0; }
     .section05 .con ul li .inner .img_section .hover_event{ opacity: 1; }
     .section05 .con ul li .inner .img_section img{ width: auto; height: 100%; transform: translate(-50%,0); left: 50%; }
-    .section05 .con .tit_wrap p br{ display: inherit; }
+
+    .footer .con{ display:block; }
+    .footer .con .item{ width: 100%; }
+    .footer .con .item.item01::before{ display: none; }
 
   }
