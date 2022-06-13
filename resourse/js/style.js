@@ -1,9 +1,12 @@
 $(document).ready(function(){
-    new fullpage('#fullpage', {
-      responsiveWidth: 1800,
+
+      $("#fullpage").fullpage({
+        responsiveWidth: 1800,
         verticalCentered: false,
         scrollBar:true,
-        anchors: ['anchor1', 'anchor2', 'anchor3','anchor4' , 'anchor5'],
+        anchors: ['section01','section02','section03','section04','section05','section06'],
+        menu : '#menu'
+    
       });
 
       var fill = $('.svg-logo').drawsvg({
